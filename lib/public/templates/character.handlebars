@@ -1,9 +1,12 @@
-Name: {{name}}<br/>
-Class: {{class}}<br/>
-HP: {{hp}}<br/>
-Mana: {{mana}}<br/>
+<form name="character" id="character">
+Name: <input type="text" name="name" id="name" value="{{name}}" readonly="readonly" disabled="disabled"/><br/>
+Class: <input type="text" name="class" id="class" value="{{class}}"/><br/>
+HP: <input type="text" name="hp" id="hp" value="{{hp}}"/><br/>
+Mana: <input type="text" name="mana" id="mana" value="{{mana}}"/><br/>
 <br/>
 Talents:
 	{{#talents}}
 		{{.}}
 	{{/talents}}
+
+</form>
